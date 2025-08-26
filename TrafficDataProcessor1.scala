@@ -7,6 +7,7 @@ import org.apache.spark.ml.evaluation.BinaryClassificationEvaluator
 
 object TrafficDataProcessor1 {
   def main(args: Array[String]): Unit = {
+    //Spark Session Initialization
     val spark = SparkSession.builder()
       .appName("Traffic Congestion Prediction")
       .master("local[*]")
@@ -73,3 +74,4 @@ object TrafficDataProcessor1 {
     spark.stop()
   }
 }
+
